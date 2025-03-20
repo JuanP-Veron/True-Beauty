@@ -1,0 +1,136 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF0F3;
+    color: #555;
+}
+
+
+.header {
+    background-color: #FAF0F1; /* Rosa suave */
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+
+h2 {
+    color: #D291BC;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Appointment Form Styles */
+.book_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.containerr {
+    width: 80%;
+    background: #fff1f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Selection Grid */
+.items_tab {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.itemListElement {
+    background: #ffe1e9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.itemListElement:hover {
+    transform: scale(1.05);
+}
+.service_button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FAD8D5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service_button.selected {
+    background-color: #E5A5B5;
+}
+
+
+.service_label {
+    background: #E5A5B5;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.service_label input {
+    display: none;
+}
+
+.service_label:hover {
+    background: #D291BC;
+}
+
+/* Date & Time Selection */
+.select_date_time_div,
+.client_details_div {
+    margin: 20px 0;
+    padding: 20px;
+    background: #FFE4E9;
+    border-radius: 10px;
+}
+
+.text_header span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D291BC;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #E5A5B5;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+.default_btn {
+    background: #D291BC;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.default_btn:hover {
+    background: #B2769B;
+}

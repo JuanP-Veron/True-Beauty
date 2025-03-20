@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth; /* Habilitar desplazamiento suave */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FDFDFE; /* Blanco suave */
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #FAF0F1; /* Rosa suave */
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FAF0F1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 30px;
+    color: #7e7e7e; /* Gris oscuro */
+    display: block;
+    font-weight: bold;
+}
+
+.menu .navbar ul li a:hover {
+    color: #E5A5B5; /* Rosa suave */
+}
+
+.logo {
+    display: block;
+    padding: 20px;
+    font-weight: 800;
+}
+
+.logo img {
+    height: 88px; /* Ajusta la altura de la imagen */
+    width: auto; /* Mantiene la proporción de la imagen */
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: #323232; /* Gris oscuro */
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #818181; /* Gris claro */
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+    aspect-ratio: 1/1;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: #ffaec3; /* Rosa suave */
+    color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: #323232; /* Gris oscuro */
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #818181; /* Gris claro */
+}
+
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: #FAF0F1; /* Rosa pálido */
+}
+
+.servicios h2 {
+    color: #323232; /* Gris oscuro */
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(16, 14, 14, 0.548);
+    flex-basis: calc(25% - 28px);
+    background-color: #FDFDFE;
+    border: 2px solid #FAD8D5;
+    border-radius: 10px;
+    transition: 400ms all ease;
+    filter: grayscale(100%) opacity(35%);
+}
+
+.servicio-1:nth-child(odd) {
+    transform: translate(-20px);
+}
+
+.servicio-1:hover {
+    flex-basis: 200px;
+    filter: grayscale(0) opacity(100%);
+}
+
+.servicio-1 i {
+    font-size: 30px;
+    color: #E5A5B5; /* Rosa suave */
+    margin-bottom: 15px;
+}
+
+.servicio-1 h3 {
+    font-size: 20px;
+    color: #323232; /* Gris oscuro */
+    text-transform: capitalize;
+}
+
+/* Estilos para la sección de precios */
+.pricing_section {
+    padding: 80px 0;
+    background-color: #fff; /* Fondo blanco */
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section_heading {
+    margin-bottom: 60px;
+}
+
+.section_heading h3 {
+    font-size: 24px;
+    color: #ff7eb9; /* Rosa claro */
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section_heading h2 {
+    font-size: 36px;
+    color: #333; /* Texto oscuro para contraste */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.heading-line {
+    width: 60px;
+    height: 3px;
+    background-color: #ff7eb9; /* Rosa claro */
+    margin: 0 auto;
+}
+
+/* Estilos para las filas y columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.col-lg-4 {
+    flex: 1 1 300px; /* Tarjetas flexibles con un ancho mínimo de 300px */
+    max-width: 350px; /* Ancho máximo para evitar que se estiren demasiado */
+    display: flex; /* Hace que todas las tarjetas tengan la misma altura */
+}
+
+.price_wrap {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 126, 185, 0.1); /* Sombra suave rosa */
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ffe6f0; /* Borde rosa muy claro */
+    flex: 1; /* Hace que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.price_wrap:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(255, 126, 185, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+.price_wrap h3 {
+    font-size: 28px;
+    color: #ff7eb9; /* Rosa claro */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Estilos para la lista de precios */
+.price_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Hace que la lista ocupe el espacio restante */
+}
+
+.price_list li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffe6f0; /* Borde rosa muy claro */
+}
+
+.price_list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.price_list h4 {
+    font-size: 20px;
+    color: #333; /* Texto oscuro */
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.price_list p {
+    font-size: 16px;
+    color: #666; /* Texto gris para la descripción */
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.price_list .price {
+    font-size: 24px;
+    color: #ff7eb9; /* Rosa claro */
+    font-weight: bold;
+}
+.reserva {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    color: #fff; /* Color del texto */
+    background-color: #f284d3; /* Verde menta suave */
+    border-radius: 30px; /* Bordes redondeados */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    transition: all 0.3s ease; /* Transición suave */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(216, 82, 249, 0.859); /* Sombra suave */
+}
+
+/* Efecto hover con animación */
+.reserva:hover {
+    background-color: #eb34e8; /* Verde menta un poco más oscuro */
+    box-shadow: 0 6px 20px rgba(255, 35, 248, 0.88); /* Sombra más pronunciada */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Animación de fondo al hacer hover */
+.reserva::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3); /* Efecto de luz */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+.reserva:hover::after {
+    transform: translate(-50%, -50%) scale(1); /* Animación de expansión */
+}
+
+
+/* Footer */
+.footer {
+    padding: 50px;
+    background-color: #FAF0F1; /* Blanco suave */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social a {
+    color: #323232; /* Gris oscuro */
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social a:hover {
+    color: #E5A5B5; /* Rosa suave */
+}
+
+.social i {
+    font-size: 20px;
+    color: #E5A5B5; /* Rosa suave */
+}
+
+.info {
+    margin-top: 15px;
+    color: #323232; /* Gris oscuro */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info i {
+    margin-right: 8px;
+    color: #E5A5B5; /* Rosa suave */
+}
+
+
+@media (max-width: 991px) {
+    /* Estilos generales para pantallas medianas */
+    .menu {
+        padding: 10px 20px;
+        top: 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .logo {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 70px;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .servicios {
+        padding: 30px;
+    }
+
+    .servicios-content {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .servicio-1 {
+        flex-basis: 100%; /* Ocupa el 100% del ancho en móviles */
+        margin-bottom: 20px; /* Espaciado entre servicios */
+        filter: grayscale(0) opacity(100%); /* Mostrar siempre en color completo */
+        transform: none; /* Eliminar transformaciones */
+        transition: none; /* Desactivar transiciones */
+    }
+
+    .servicio-1:hover {
+        flex-basis: 100%; /* Evitar que aumente en móviles */
+    }
+
+    .servicio-1:nth-child(odd) {
+        transform: none; /* Eliminar transformaciones en móviles */
+    }
+
+    .formulario {
+        padding: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social, .info {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .social a, .info p {
+        justify-content: center;
+    }
+
+    /* Estilos específicos para la sección de precios en pantallas medianas */
+    .col-lg-4 {
+        flex: 1 1 45%; /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .col-lg-4 {
+        flex: 1 1 100%; /* Una columna en pantallas pequeñas */
+    }
+
+    .section_heading h2 {
+        font-size: 28px;
+    }
+
+    .price_wrap h3 {
+        font-size: 24px;
+    }
+
+    .price_list h4 {
+        font-size: 18px;
+    }
+
+    .price_list .price {
+        font-size: 20px;
+    }
+}

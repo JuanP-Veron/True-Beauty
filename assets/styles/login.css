@@ -1,0 +1,196 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5b9d4, #fcb3ca);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilos para la imagen */
+.img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8b5d3;
+}
+
+.img img {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Estilos para el formulario de inicio de sesión */
+.login-content {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.login-content form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-content img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-content h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Estilos para los campos de entrada */
+.input-div {
+    position: relative;
+    margin: 25px 0;
+}
+
+.input-div .div {
+    position: relative;
+}
+
+.input-div .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.input-div.focus .div h5 {
+    top: -5px;
+    font-size: 0.8rem;
+    color: #ff91c2;
+}
+
+.input-div.focus .input {
+    border-color: #ff7eb9;
+}
+
+.input-div.pass {
+    position: relative;
+}
+
+.view {
+    position: absolute;
+    top: 70%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2rem;
+}
+
+.view:hover {
+    color: #ff7eb9;
+}
+
+/* Estilos para el enlace "Volver" */
+.text-center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.text-center a {
+    color: #ff7eb9;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    font-weight: 600; /* Grosor de la fuente */
+    color: #fff; /* Color del texto */
+    background-color: #ff7eb9; /* Verde menta suave */
+    border-radius: 30px; /* Bordes redondeados */
+    text-align: center;
+    text-decoration: none; /* Sin subrayado */
+    transition: all 0.3s ease; /* Transición suave */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(244, 196, 255, 0.4); /* Sombra suave */
+}
+
+/* Efecto hover con animación */
+.btn:hover {
+    background-color: #eb34e8; /* Verde menta un poco más oscuro */
+    box-shadow: 0 6px 20px rgba(224, 149, 253, 0.6); /* Sombra más pronunciada */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Animación de fondo al hacer hover */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.3); /* Efecto de luz */
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .img {
+        display: none; /* Oculta la imagen en móviles */
+    }
+
+    .login-content {
+        padding: 30px;
+    }
+
+    .login-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-div {
+        margin: 15px 0;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
