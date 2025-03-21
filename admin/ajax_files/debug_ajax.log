@@ -1,5 +1,6 @@
 Array
 (
-    [category_id] => 8
-    [do] => Eliminar
+    [category_id] => 2
+    [category_name] => Maquillaje Profesional
+    [do] => Editar
 )
