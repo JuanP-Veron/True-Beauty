@@ -203,20 +203,29 @@ $(document).ready(function() {
 */
 
 $('.delete_service_bttn').click(function() {
-    var service_id = $(this).data('id');
-    var do_ = "Eliminar";
-
+    // Usar esta ruta base que funciona en cualquier entorno
+    var baseUrl = window.location.origin + '/webmaquillaje/admin';
+    
     $.ajax({
-        url: "ajax_files/services_ajax.php",
+        url: baseUrl + "/ajax_files/services_ajax.php",
         method: "POST",
-        data: { service_id: service_id, do: do_ },
-        success: function(data) {
-            swal("Servicio Eliminado", "¡El servicio ha sido eliminado exitosamente!", "success").then((value) => {
-                window.location.replace("services.php");
-            });
+        dataType: 'json',
+        data: { 
+            service_id: $(this).data('id'), 
+            do: "Delete" 
+        },
+        success: function(response) {
+            if(response.status === 'success') {
+                swal("Éxito", response.message, "success").then(() => {
+                    location.reload();
+                });
+            } else {
+                swal("Error", response.message, "error");
+            }
         },
         error: function(xhr, status, error) {
-            alert('SE HA ENCONTRADO UN ERROR AL INTENTAR EJECUTAR SU SOLICITUD');
+            console.error("Error completo:", xhr.responseText);
+            swal("Error", "No se pudo conectar al servidor", "error");
         }
     });
 });
