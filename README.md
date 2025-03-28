@@ -1,6 +1,6 @@
 # True-Beauty
-![True-Beauty](https://raw.githubusercontent.com/JuanP-Veron/True-Beauty/master/assets/img/True-Beauty.PNG)
-
+![True-Beauty](https://github.com/JuanP-Veron/True-Beauty/blob/main/assets/img/True-Beauty.PNG)
+![PANEL ADMIN](https://github.com/JuanP-Veron/True-Beauty/blob/main/assets/img/Admin.PNG)
 
 ## Descripción
 True-Beauty es un sitio web desarrollado para un centro de belleza, donde los clientes pueden conocer los servicios ofrecidos, ver los precios y reservar citas en línea.
