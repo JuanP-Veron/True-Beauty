@@ -191,13 +191,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_book_appointme
                     <div>
                         <div class="form-group">
                             <input type="text" name="client_first_name" id="client_first_name" class="form-control" placeholder="Nombre" required>
-                            <span class="invalid-feedback">Este campo es requerido</span>
                             <input type="text" name="client_last_name" id="client_last_name" class="form-control" placeholder="Apellido" required>
-                            <span class="invalid-feedback">Este campo es requerido</span>
                             <input type="email" name="client_email" id="client_email" class="form-control" placeholder="Correo" required>
-                            <span class="invalid-feedback">Dirección de Correo Inválido</span>
                             <input type="text" name="client_phone_number" id="client_phone_number" class="form-control" placeholder="Teléfono Móvil" required>
-                            <span class="invalid-feedback">Número de Teléfono Inválido</span>
                         </div>
                     </div>
                 </div>
