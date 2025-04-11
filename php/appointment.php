@@ -112,6 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit_book_appointme
             $stmtServiceBooked->execute([$appointment_id, $service_id]);
         }
 
+        
         $con->commit();
         echo "<script>alert('¡Cita creada con éxito!'); window.location.href = 'appointment.php';</script>";
         exit;
